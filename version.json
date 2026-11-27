@@ -1,6 +1,6 @@
 {
-  "version": "0.3.8-web.3",
-  "engine": "engine.hit038-fix.js",
+  "version": "0.3.9-web.1",
+  "engine": "engine.hit039.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,8 +37,9 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "HIT01: limpieza de contornos blancos sin cambiar tamaño ni anclaje",
+  "description": "HIT02: reacción a golpe fuerte, seis fotogramas y limpieza de contorno",
   "spriteSheets": {
-    "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png"
+    "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
+    "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png"
   }
 }
