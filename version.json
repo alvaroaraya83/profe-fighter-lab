@@ -1,6 +1,6 @@
 {
-  "version": "0.3.4-web.1",
-  "engine": "engine.8c5012da5711.js",
+  "version": "0.3.5-web.1",
+  "engine": "engine.bidirectional035.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -35,5 +35,5 @@
     "airheavykick": "sprites/airheavykick.45e056ff2b8c.json",
     "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json"
   },
-  "description": "DEF02: bloqueo agachado con guitarra en evaluación"
+  "description": "Combate bidireccional y salto cruzado; sin cambios de sprites"
 }
