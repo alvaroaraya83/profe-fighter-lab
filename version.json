@@ -1,6 +1,6 @@
 {
-  "version": "0.3.8-web.1",
-  "engine": "engine.hit038.js",
+  "version": "0.3.8-web.2",
+  "engine": "engine.hit038-fix.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -34,13 +34,11 @@
     "airkick": "sprites/airkick.73d523d43bfd.json",
     "airheavykick": "sprites/airheavykick.45e056ff2b8c.json",
     "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json",
-    "grab": "sprites/grab.1170a25a9b5a.json"
+    "grab": "sprites/grab.1170a25a9b5a.json",
+    "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "HIT01: reacción a golpe débil, 4 fotogramas; carga segura del recurso",
+  "description": "HIT01: recurso obligatorio y prueba de golpe débil",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png"
-  },
-  "optionalAnimations": {
-    "hitLight": "sprites/hitLight.HIT01.json"
   }
 }
