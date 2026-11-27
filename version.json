@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2-web.1",
+  "version": "0.3.2-web.2",
   "engine": "engine.61b42214917a.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
