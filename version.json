@@ -1,6 +1,6 @@
 {
-  "version": "0.3.3-web.1",
-  "engine": "engine.ce4c38992aa1.js",
+  "version": "0.3.4-web.1",
+  "engine": "engine.8c5012da5711.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -32,7 +32,8 @@
     "airjab": "sprites/airjab.4695a06fb990.json",
     "airpunch": "sprites/airpunch.bdeb8d77ddc7.json",
     "airkick": "sprites/airkick.73d523d43bfd.json",
-    "airheavykick": "sprites/airheavykick.45e056ff2b8c.json"
+    "airheavykick": "sprites/airheavykick.45e056ff2b8c.json",
+    "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json"
   },
-  "description": "ATK12: patada fuerte aérea en evaluación"
+  "description": "DEF02: bloqueo agachado con guitarra en evaluación"
 }
