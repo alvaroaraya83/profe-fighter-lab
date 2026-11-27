@@ -1,5 +1,5 @@
 {
-  "version": "0.3.6-web.1",
+  "version": "0.3.6-web.2",
   "engine": "engine.grab036.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
