@@ -1,6 +1,6 @@
 {
-  "version": "0.3.9-web.1",
-  "engine": "engine.hit039.js",
+  "version": "0.3.10-web.1",
+  "engine": "engine.hit0310.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,9 +37,10 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "HIT02: reacción a golpe fuerte, seis fotogramas y limpieza de contorno",
+  "description": "HIT03: reacción a golpe bajo, cuatro fotogramas y limpieza de contorno",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
-    "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png"
+    "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
+    "hitLow": "sprites/Sprite de reacción en guardia.png"
   }
 }
