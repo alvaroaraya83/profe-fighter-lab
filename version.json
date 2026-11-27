@@ -1,6 +1,6 @@
 {
-  "version": "0.3.13-web.1",
-  "engine": "engine.dwn0313.js",
+  "version": "0.3.14-web.1",
+  "engine": "engine.dwn0314.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,13 +37,14 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "DWN01: caída de frente, seis fotogramas, barrida de prueba y permanencia en el suelo",
+  "description": "DWN02: caída de espaldas, seis fotogramas, enlace con HIT05 y permanencia boca arriba",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
     "hitLow": "sprites/Sprite de reacción en guardia.png",
     "hitGrab": "sprites/Secuencia pixel art de reacción a agarre.png",
     "dizzy": "sprites/Animación de mareo en seis poses.png",
-    "fallFront": "sprites/Secuencia pixel art de una caída_gracias.png"
+    "fallFront": "sprites/Secuencia pixel art de una caída_gracias.png",
+    "fallBack": "sprites/Secuencia pixel art de caída hacia atrás.png"
   }
 }
