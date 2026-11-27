@@ -1,6 +1,6 @@
 {
-  "version": "0.3.15-web.1",
-  "engine": "engine.rec0315.js",
+  "version": "0.3.16-web.1",
+  "engine": "engine.spc0316.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,7 +37,7 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "REC01 y REC02: recuperaciones completas de ocho fotogramas enlazadas a DWN01/DWN02",
+  "description": "SPC01 Riff devastador: diez fotogramas, onda sonora, coste de energía y comando direccional",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
@@ -47,6 +47,7 @@
     "fallFront": "sprites/Secuencia pixel art de una caída_gracias.png",
     "fallBack": "sprites/Secuencia pixel art de caída hacia atrás.png",
     "recoverFront": "sprites/REC01.png",
-    "recoverBack": "sprites/REC02.png"
+    "recoverBack": "sprites/REC02.png",
+    "riff": "Secuencia pixel art de ataque con guitarra.png"
   }
 }
