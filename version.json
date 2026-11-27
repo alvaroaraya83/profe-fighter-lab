@@ -1,6 +1,6 @@
 {
-  "version": "0.3.7-web.1",
-  "engine": "engine.grab037.js",
+  "version": "0.3.7-web.2",
+  "engine": "engine.grab037-backfall.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -36,7 +36,7 @@
     "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json",
     "grab": "sprites/grab.1170a25a9b5a.json"
   },
-  "description": "GRB02: ¡Silencio en la sala!, agarre frontal",
+  "description": "GRB02: caída de espaldas y controles visibles",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png"
   }
