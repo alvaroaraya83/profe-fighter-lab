@@ -1,6 +1,6 @@
 {
-  "version": "0.3.16-web.3",
-  "engine": "engine.spc0316-free.js",
+  "version": "0.3.17-web.1",
+  "engine": "engine.spc0317.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,7 +37,7 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "SPC01: ataque especial sin requisito ni consumo de energía, mismo comando y daño",
+  "description": "SPC02 Sobrecarga muscular: diez poses, doble abajo + U, lanzamiento y derribo sin energía",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
@@ -48,6 +48,7 @@
     "fallBack": "sprites/Secuencia pixel art de caída hacia atrás.png",
     "recoverFront": "sprites/REC01.png",
     "recoverBack": "sprites/REC02.png",
-    "riff": "Secuencia pixel art de ataque con guitarra.png"
+    "riff": "Secuencia pixel art de ataque con guitarra.png",
+    "muscle": "Sprite Sheet de Sobrecarga Muscular.png"
   }
 }
