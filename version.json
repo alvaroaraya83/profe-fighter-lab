@@ -1,6 +1,6 @@
 {
-  "version": "0.3.2-web.2",
-  "engine": "engine.61b42214917a.js",
+  "version": "0.3.3-web.1",
+  "engine": "engine.ce4c38992aa1.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -31,7 +31,8 @@
     "sweepOriginal": "sprites/sweepOriginal.c2d1e1e736af.json",
     "airjab": "sprites/airjab.4695a06fb990.json",
     "airpunch": "sprites/airpunch.bdeb8d77ddc7.json",
-    "airkick": "sprites/airkick.73d523d43bfd.json"
+    "airkick": "sprites/airkick.73d523d43bfd.json",
+    "airheavykick": "sprites/airheavykick.45e056ff2b8c.json"
   },
-  "description": "Base aprobada: patada débil aérea"
+  "description": "ATK12: patada fuerte aérea en evaluación"
 }
