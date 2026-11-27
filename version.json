@@ -1,6 +1,6 @@
 {
-  "version": "0.3.6-web.2",
-  "engine": "engine.grab036.js",
+  "version": "0.3.6-web.3",
+  "engine": "engine.grab036-recovery.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -36,5 +36,5 @@
     "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json",
     "grab": "sprites/grab.1170a25a9b5a.json"
   },
-  "description": "GRB01: A dirección, agarre con lanzamiento hacia atrás"
+  "description": "GRB01: A dirección, recuperación del muñeco corregida"
 }
