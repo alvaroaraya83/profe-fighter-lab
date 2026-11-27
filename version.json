@@ -1,6 +1,6 @@
 {
-  "version": "0.3.5-web.1",
-  "engine": "engine.bidirectional035.js",
+  "version": "0.3.6-web.1",
+  "engine": "engine.grab036.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -33,7 +33,8 @@
     "airpunch": "sprites/airpunch.bdeb8d77ddc7.json",
     "airkick": "sprites/airkick.73d523d43bfd.json",
     "airheavykick": "sprites/airheavykick.45e056ff2b8c.json",
-    "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json"
+    "lowblock": "sprites/lowblock.b3c4cfd9eb8d.json",
+    "grab": "sprites/grab.1170a25a9b5a.json"
   },
-  "description": "Combate bidireccional y salto cruzado; sin cambios de sprites"
+  "description": "GRB01: A dirección, agarre con lanzamiento hacia atrás"
 }
