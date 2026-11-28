@@ -1,6 +1,6 @@
 {
-  "version": "0.3.22-web.1",
-  "engine": "engine.ent0322.js",
+  "version": "0.3.23-web.1",
+  "engine": "engine.end0323.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,7 +37,7 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "ENT01 2.0: cuatro bloques de seis poses, caminata cíclica, duración variable según distancia, Esc para omitir",
+  "description": "VIC01 y LOS01: cierre automático al K.O., solo original, pose final sostenida, pruebas independientes",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
@@ -60,6 +60,8 @@
     "entranceA": "sprites/ENT01A.png",
     "entranceB": "sprites/ENT01B.png",
     "entranceC": "sprites/ENT01C.png",
-    "entranceD": "sprites/ENT01D.png"
+    "entranceD": "sprites/ENT01D.png",
+    "victory": "sprites/VIC01.png",
+    "defeat": "sprites/LOS01.png"
   }
 }
