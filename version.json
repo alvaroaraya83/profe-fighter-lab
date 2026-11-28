@@ -1,6 +1,6 @@
 {
-  "version": "0.3.19-web.1",
-  "engine": "engine.spc0319.js",
+  "version": "0.3.20-web.1",
+  "engine": "engine.ult0320.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,7 +37,7 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "SPC04 Nube psicodélica y FX01: doble abajo + K, nube independiente, aturdimiento sin energía",
+  "description": "ULT01 La clase magistral: cuatro bloques, cinco impactos, 100% energía, C provisional si PNG duplicado",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
@@ -52,6 +52,10 @@
     "muscle": "Sprite Sheet de Sobrecarga Muscular.png",
     "smartGlasses": "sprites/SPC03.png",
     "smoke": "sprites/Hombre musculoso fumando en guardia.png",
-    "smokeFX": "sprites/Secuencia pixel art de humo verde grisáceo.png"
+    "smokeFX": "sprites/Secuencia pixel art de humo verde grisáceo.png",
+    "ultA": "sprites/Activación.png",
+    "ultB": "sprites/ULT01B.png",
+    "ultC": "sprites/ULT01C.png",
+    "ultD": "sprites/ULT01D.png"
   }
 }
