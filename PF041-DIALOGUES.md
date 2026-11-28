@@ -1,0 +1,5 @@
+# PROFE FIGHTER 0.4.1 — Diálogos
+
+Versión independiente de 0.4.0. `dialogue.pf041.js` contiene un controlador reutilizable para dos participantes. Cada perfil define `dialogues` como mapa de eventos con `code`, `text`, `at` y `duration` (ms). El motor llama a begin/trigger para cada acción; tick controla caducidad sin modificar la simulación; draw coloca los globos en el canvas, ajusta líneas y separa globos simultáneos. No usa voces ni audio. El modo entrenamiento permite previsualización individual y simultánea. El banco aprobado se conserva literalmente en `pf041-el-maestro.json`. Las activaciones de agarres ocurren al conectar; los especiales se sincronizan por tiempo de animación. Derrota por tiempo activa LOS01; al K.O. se conserva la caída aprobada del motor 0.4.0. Los perfiles futuros pueden cambiar textos y tiempos sin modificar este módulo; deben emitir los eventos de sus propios controladores.
+
+Pruebas de lógica con sprites simulados; revisión visual y navegador real pendientes.
