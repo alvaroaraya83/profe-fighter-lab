@@ -1,0 +1,19 @@
+(()=>{"use strict";
+function create(bank,options={}){
+ const channels=Object.keys(bank.channels),storage=options.storage??null,key="pf-audio-settings-v1",clamp=v=>Math.max(0,Math.min(1,Number.isFinite(+v)?+v:0));
+ let settings={master:bank.master,muted:false,channels:{...bank.channels}},context=null,master=null,nodes={},status="locked",seq=0,log=[],active=new Set(),buffers=new Map(),generation=0;
+ try{const saved=JSON.parse(storage?.getItem(key)||"null");if(saved){settings.master=clamp(saved.master??settings.master);settings.muted=saved.muted===true;for(const c of channels)settings.channels[c]=clamp(saved.channels?.[c]??settings.channels[c]);}}catch{}
+ function mix(){if(master)master.gain.value=settings.muted?0:settings.master;for(const c of channels)if(nodes[c])nodes[c].gain.value=settings.channels[c];}
+ function persist(){try{storage?.setItem(key,JSON.stringify(settings));}catch{}}
+ function volume(c,v){if(c==="master")settings.master=clamp(v);else if(channels.includes(c))settings.channels[c]=clamp(v);else return;mix();persist();}
+ function mute(v){settings.muted=!!v;mix();persist();}
+ async function unlock(){try{if(!context){const AC=options.AudioContext||window.AudioContext||window.webkitAudioContext;if(!AC){status="unsupported";return false;}context=new AC();master=context.createGain();master.connect(context.destination);for(const c of channels){nodes[c]=context.createGain();nodes[c].connect(master);}mix();}if(context.state!=="running")await context.resume();status=context.state==="running"?"ready":"locked";return status==="ready";}catch{status="error";return false;}}
+ function stopAll(){generation++;for(const source of active){try{source.stop();}catch{}}active.clear();}
+ function clear(){log=[];}
+ async function load(url){if(!buffers.has(url)){const task=(async()=>{const response=await (options.fetch||window.fetch)(url);if(!response.ok)throw Error("HTTP "+response.status);return context.decodeAudioData(await response.arrayBuffer());})();buffers.set(url,task);task.catch(()=>buffers.delete(url));}return buffers.get(url);}
+ function emit(id,meta={}){const event=bank.events[id];if(!event)return false;const entry={seq:++seq,id,channel:event.channel,player:meta.player??null,detail:meta.detail??"",status:event.asset?"pending":"unassigned"};log.unshift(entry);log=log.slice(0,100);if(!event.asset)return true;if(!context||context.state!=="running"){entry.status="locked";return true;}const token=generation;load(event.asset).then(buffer=>{if(token!==generation){entry.status="cancelled";return;}const source=context.createBufferSource(),gain=context.createGain();source.buffer=buffer;source.loop=!!event.loop;gain.gain.value=clamp(event.gain??1);source.connect(gain);gain.connect(nodes[event.channel]);active.add(source);source.onended=()=>{active.delete(source);try{source.disconnect();gain.disconnect();}catch{}};source.start();entry.status="playing";}).catch(()=>entry.status="error");return true;}
+ function testTone(channel){if(!context||context.state!=="running"||!nodes[channel])return false;try{const o=context.createOscillator(),g=context.createGain(),t=context.currentTime;o.type="sine";o.frequency.value=({combat:330,special:440,interface:550,music:660})[channel]||440;g.gain.setValueAtTime(0.0001,t);g.gain.linearRampToValueAtTime(.12,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+.22);o.connect(g);g.connect(nodes[channel]);active.add(o);o.onended=()=>{active.delete(o);o.disconnect();g.disconnect();};o.start(t);o.stop(t+.24);return true;}catch{return false;}}
+ return {unlock,volume,mute,emit,testTone,stopAll,clear,state:()=>({status,contextState:context?.state??null,settings:JSON.parse(JSON.stringify(settings)),log:log.map(e=>({...e})),assigned:Object.values(bank.events).filter(e=>e.asset).length,total:Object.keys(bank.events).length}),events:()=>Object.keys(bank.events)};
+}
+window.PFAudio={create};
+})();
