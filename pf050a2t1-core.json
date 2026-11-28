@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "version": "0.5.0-alpha.2-test.1",
+  "rules": {
+    "life": 1000,
+    "energyMax": 100,
+    "roundMs": 99000,
+    "winsRequired": 2,
+    "stepMs": 16.666666666666668,
+    "arena": {
+      "minX": 100,
+      "maxX": 700
+    },
+    "bodyGap": 73
+  },
+  "commonAttacks": {
+    "grab2": {
+      "damage": 150,
+      "reach": 85,
+      "y": 145,
+      "h": 120,
+      "active": [
+        1
+      ],
+      "stun": 940,
+      "stop": 0,
+      "knock": 0,
+      "throw": true
+    },
+    "grab": {
+      "damage": 150,
+      "reach": 85,
+      "y": 145,
+      "h": 120,
+      "active": [
+        1
+      ],
+      "stun": 940,
+      "stop": 0,
+      "knock": 0,
+      "throw": true
+    },
+    "airheavykick": {
+      "damage": 115,
+      "reach": 120,
+      "y": 178,
+      "h": 70,
+      "active": [
+        3
+      ],
+      "stun": 460,
+      "stop": 80,
+      "knock": 24,
+      "air": true
+    },
+    "airkick": {
+      "damage": 55,
+      "reach": 115,
+      "y": 215,
+      "h": 60,
+      "active": [
+        2
+      ],
+      "stun": 390,
+      "stop": 50,
+      "knock": 9,
+      "air": true
+    },
+    "airpunch": {
+      "damage": 100,
+      "reach": 105,
+      "y": 225,
+      "h": 65,
+      "active": [
+        3,
+        4
+      ],
+      "stun": 430,
+      "stop": 75,
+      "knock": 18,
+      "air": true
+    },
+    "airjab": {
+      "damage": 40,
+      "reach": 100,
+      "y": 205,
+      "h": 50,
+      "active": [
+        2
+      ],
+      "stun": 340,
+      "stop": 45,
+      "knock": 6,
+      "air": true
+    },
+    "lowjab": {
+      "damage": 35,
+      "reach": 85,
+      "y": 211,
+      "h": 39,
+      "active": [
+        1
+      ],
+      "stun": 430,
+      "stop": 40,
+      "knock": 5
+    },
+    "uppercut": {
+      "damage": 95,
+      "reach": 105,
+      "y": 88,
+      "h": 140,
+      "active": [
+        3,
+        4
+      ],
+      "stun": 430,
+      "stop": 80,
+      "knock": 17
+    },
+    "lowkick": {
+      "damage": 45,
+      "reach": 102,
+      "y": 282,
+      "h": 45,
+      "active": [
+        2
+      ],
+      "stun": 460,
+      "stop": 45,
+      "knock": 6,
+      "low": true
+    },
+    "sweep": {
+      "damage": 110,
+      "reach": 135,
+      "y": 286,
+      "h": 42,
+      "active": [
+        4
+      ],
+      "stun": 780,
+      "stop": 90,
+      "knock": 30,
+      "low": true,
+      "down": true
+    },
+    "jab": {
+      "damage": 45,
+      "reach": 85,
+      "y": 179,
+      "h": 40,
+      "active": [
+        2
+      ],
+      "stun": 480,
+      "stop": 45,
+      "knock": 7
+    },
+    "kick": {
+      "damage": 60,
+      "reach": 105,
+      "y": 208,
+      "h": 51,
+      "active": [
+        2,
+        3
+      ],
+      "stun": 500,
+      "stop": 55,
+      "knock": 9
+    },
+    "punch": {
+      "damage": 100,
+      "reach": 120,
+      "y": 177,
+      "h": 55,
+      "active": [
+        4
+      ],
+      "stun": 350,
+      "stop": 80,
+      "knock": 22
+    },
+    "heavykick": {
+      "damage": 120,
+      "reach": 112,
+      "y": 130,
+      "h": 95,
+      "active": [
+        3,
+        4
+      ],
+      "stun": 420,
+      "stop": 90,
+      "knock": 27
+    },
+    "blow": {
+      "damage": 135,
+      "reach": 120,
+      "y": 177,
+      "h": 55,
+      "active": [
+        4
+      ],
+      "stun": 520,
+      "stop": 100,
+      "knock": 65
+    }
+  },
+  "commonDurations": {
+    "recoverFront": [
+      65,
+      80,
+      90,
+      100,
+      100,
+      100,
+      95,
+      70
+    ],
+    "recoverBack": [
+      65,
+      80,
+      90,
+      100,
+      100,
+      100,
+      95,
+      70
+    ],
+    "fallBack": [
+      60,
+      80,
+      100,
+      90,
+      80,
+      90
+    ],
+    "fallFront": [
+      60,
+      80,
+      100,
+      90,
+      80,
+      90
+    ],
+    "dizzy": [
+      150,
+      150,
+      150,
+      150,
+      150,
+      150
+    ],
+    "hitGrab": [
+      60,
+      100,
+      140,
+      160,
+      160,
+      180
+    ],
+    "hitLow": [
+      40,
+      80,
+      110,
+      70
+    ],
+    "hitStrong": [
+      35,
+      65,
+      90,
+      90,
+      80,
+      60
+    ],
+    "hitLight": [
+      40,
+      65,
+      85,
+      60
+    ],
+    "grab2": [
+      80,
+      110,
+      120,
+      200,
+      85,
+      100,
+      100,
+      105
+    ],
+    "grab": [
+      85,
+      95,
+      130,
+      120,
+      100,
+      100,
+      120,
+      100
+    ],
+    "lowblock": [
+      40,
+      55,
+      700,
+      60
+    ],
+    "airheavykick": [
+      45,
+      45,
+      50,
+      80,
+      55,
+      45
+    ],
+    "airkick": [
+      35,
+      45,
+      80,
+      60
+    ],
+    "airpunch": [
+      40,
+      45,
+      55,
+      75,
+      55,
+      45
+    ],
+    "airjab": [
+      40,
+      40,
+      75,
+      60
+    ],
+    "lowjab": [
+      45,
+      65,
+      50,
+      50
+    ],
+    "uppercut": [
+      40,
+      50,
+      50,
+      65,
+      70,
+      100
+    ],
+    "lowkick": [
+      40,
+      45,
+      65,
+      90
+    ],
+    "sweep": [
+      40,
+      45,
+      50,
+      50,
+      85,
+      65,
+      60,
+      60
+    ],
+    "jab": [
+      40,
+      45,
+      65,
+      50,
+      55,
+      55
+    ],
+    "kick": [
+      65,
+      60,
+      55,
+      55,
+      65,
+      65
+    ],
+    "punch": [
+      50,
+      55,
+      60,
+      65,
+      80,
+      65,
+      65,
+      60
+    ],
+    "heavykick": [
+      50,
+      60,
+      65,
+      75,
+      75,
+      70,
+      65,
+      60
+    ],
+    "block": [
+      140,
+      45,
+      700,
+      45
+    ],
+    "dash": [
+      30,
+      40,
+      40,
+      55,
+      50,
+      35
+    ],
+    "crouch": [
+      50,
+      50,
+      700,
+      60
+    ],
+    "jump": [
+      35,
+      45,
+      105,
+      130,
+      130,
+      115,
+      55,
+      35
+    ]
+  }
+}
