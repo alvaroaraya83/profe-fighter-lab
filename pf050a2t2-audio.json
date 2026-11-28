@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "channels": {
+    "combat": 0.8,
+    "special": 0.8,
+    "interface": 0.7,
+    "music": 0.5
+  },
+  "master": 0.75,
+  "events": {
+    "attack.light": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "attack.heavy": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "impact.light": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "SFX01"
+    },
+    "impact.heavy": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "SFX02"
+    },
+    "impact.block": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "SFX07"
+    },
+    "impact.throw": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "movement.jump": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "SFX08"
+    },
+    "movement.land": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "movement.dash": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "movement.run": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "movement.fall": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "SFX12"
+    },
+    "movement.recover": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1
+    },
+    "special.riff": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "special.muscle": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "special.smartGlasses": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "special.smoke": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "special.grab": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "special.grab2": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "ultimate.start": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "ultimate.hit": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "ultimate.end": {
+      "channel": "special",
+      "asset": null,
+      "gain": 1
+    },
+    "round.ready": {
+      "channel": "interface",
+      "asset": null,
+      "gain": 1
+    },
+    "round.fight": {
+      "channel": "interface",
+      "asset": null,
+      "gain": 1
+    },
+    "round.ko": {
+      "channel": "interface",
+      "asset": null,
+      "gain": 1
+    },
+    "round.time": {
+      "channel": "interface",
+      "asset": null,
+      "gain": 1
+    },
+    "match.win": {
+      "channel": "interface",
+      "asset": null,
+      "gain": 1
+    },
+    "music.stage": {
+      "channel": "music",
+      "asset": null,
+      "gain": 1
+    },
+    "music.entrance": {
+      "channel": "music",
+      "asset": null,
+      "gain": 1
+    },
+    "music.victory": {
+      "channel": "music",
+      "asset": null,
+      "gain": 1
+    },
+    "music.defeat": {
+      "channel": "music",
+      "asset": null,
+      "gain": 1
+    },
+    "attack.punchLight": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "WSH01"
+    },
+    "attack.kickLight": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "WSH02"
+    },
+    "attack.punchHeavy": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "WSH03"
+    },
+    "attack.kickHeavy": {
+      "channel": "combat",
+      "asset": null,
+      "gain": 1,
+      "sample": "WSH04"
+    }
+  }
+}
