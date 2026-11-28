@@ -1,6 +1,6 @@
 {
-  "version": "0.3.17-web.1",
-  "engine": "engine.spc0317.js",
+  "version": "0.3.18-web.1",
+  "engine": "engine.spc0318.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,7 +37,7 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "SPC02 Sobrecarga muscular: diez poses, doble abajo + U, lanzamiento y derribo sin energía",
+  "description": "SPC03 Inteligencia artificial: diez poses, doble adelante + J, rayo alto instantáneo sin energía",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
@@ -49,6 +49,7 @@
     "recoverFront": "sprites/REC01.png",
     "recoverBack": "sprites/REC02.png",
     "riff": "Secuencia pixel art de ataque con guitarra.png",
-    "muscle": "Sprite Sheet de Sobrecarga Muscular.png"
+    "muscle": "Sprite Sheet de Sobrecarga Muscular.png",
+    "smartGlasses": "sprites/SPC03.png"
   }
 }
