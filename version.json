@@ -1,6 +1,6 @@
 {
-  "version": "0.3.21-web.1",
-  "engine": "engine.ent0321.js",
+  "version": "0.3.22-web.1",
+  "engine": "engine.ent0322.js",
   "animations": {
     "idle": "sprites/idle.34db3624e479.json",
     "forward": "sprites/forward.967502464975.json",
@@ -37,7 +37,7 @@
     "grab": "sprites/grab.1170a25a9b5a.json",
     "hitLight": "sprites/hitLight.HIT01.json"
   },
-  "description": "ENT01: ocho poses, entrada bidireccional, guitarra y lentes, prueba sin reiniciar combate",
+  "description": "ENT01 2.0: cuatro bloques de seis poses, caminata cíclica, duración variable según distancia, Esc para omitir",
   "spriteSheets": {
     "grab2": "sprites/Sprite de El Maestro_ ¡Silencio en la sala!.png",
     "hitStrong": "sprites/Secuencia de retroceso de El Maestro.png",
@@ -57,6 +57,9 @@
     "ultB": "sprites/ULT01B.png",
     "ultC": "sprites/ULT01C.png",
     "ultD": "sprites/ULT01D.png",
-    "entrance": "sprites/ENT01.png"
+    "entranceA": "sprites/ENT01A.png",
+    "entranceB": "sprites/ENT01B.png",
+    "entranceC": "sprites/ENT01C.png",
+    "entranceD": "sprites/ENT01D.png"
   }
 }
